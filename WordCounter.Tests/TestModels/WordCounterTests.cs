@@ -36,5 +36,23 @@ namespace WordCounter.Tests
       //Assert
       CollectionAssert.AreEqual(inputArray, resultArray);
     }
+
+    [TestMethod]
+    public void HowManyMatches_DoesWordMatchString_True()
+    {
+      //Arrange
+      string inputString = "When Doves Cry";
+      string inputWord = "Doves";
+      RepeatCounter newCounter = new RepeatCounter();
+
+      //Act
+      newCounter.SetString(inputString);
+      newCounter.SetWord(inputWord);
+      string[] stringArray = newCounter.StringToArray();
+      int match = newCounter.HowManyMatches(stringArray, inputWord);
+
+      //Assert
+      Assert.AreEqual(1, match);
+    }
   }
 }
