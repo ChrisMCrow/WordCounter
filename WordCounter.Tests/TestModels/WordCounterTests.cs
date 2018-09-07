@@ -20,5 +20,21 @@ namespace WordCounter.Tests
       //Assert
       Assert.AreEqual(inputString, resultString);
     }
+
+    [TestMethod]
+    public void StringToArray_ConvertsStringToArrayOfWords_True();
+    {
+      //Arrange
+      string inputString = "Little Red Corvette";
+      string[] inputArray = {"Little", "Red", "Corvette"};
+      RepeatCounter newCounter = new RepeatCounter();
+
+      //Act
+      newCounter.SetString(inputString);
+      string[] resultArray = newCounter.StringToArray();
+
+      //Assert
+      Assert.AreEqual(inputArray, resultArray);
+    }
   }
 }
