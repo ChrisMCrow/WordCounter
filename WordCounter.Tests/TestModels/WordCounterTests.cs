@@ -48,11 +48,10 @@ namespace WordCounter.Tests
       //Act
       newCounter.SetString(inputString);
       newCounter.SetWord(inputWord);
-      string[] stringArray = newCounter.StringToArray();
-      int match = newCounter.HowManyMatches(stringArray, inputWord);
+      int wordMatches = newCounter.HowManyMatches();
 
       //Assert
-      Assert.AreEqual(1, match);
+      Assert.AreEqual(1, wordMatches);
     }
   }
 }
