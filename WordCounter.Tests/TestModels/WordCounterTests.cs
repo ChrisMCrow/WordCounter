@@ -41,8 +41,8 @@ namespace WordCounter.Tests
     public void HowManyMatches_DoesWordMatchString_True()
     {
       //Arrange
-      string inputString = "When Doves Cry";
-      string inputWord = "Doves";
+      string inputString = "I just want your extra time and your kiss";
+      string inputWord = "your";
       RepeatCounter newCounter = new RepeatCounter();
 
       //Act
@@ -51,7 +51,7 @@ namespace WordCounter.Tests
       int wordMatches = newCounter.HowManyMatches();
 
       //Assert
-      Assert.AreEqual(1, wordMatches);
+      Assert.AreEqual(2, wordMatches);
     }
   }
 }
