@@ -22,7 +22,7 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void StringToArray_ConvertsStringToArrayOfWords_True();
+    public void StringToArray_ConvertsStringToArrayOfWords_True()
     {
       //Arrange
       string inputString = "Little Red Corvette";
@@ -34,7 +34,7 @@ namespace WordCounter.Tests
       string[] resultArray = newCounter.StringToArray();
 
       //Assert
-      Assert.AreEqual(inputArray, resultArray);
+      CollectionAssert.AreEqual(inputArray, resultArray);
     }
   }
 }
