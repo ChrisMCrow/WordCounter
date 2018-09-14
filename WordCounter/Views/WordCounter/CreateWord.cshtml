@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1 class="jumbotron">Word Counter</h1>
+  <p class="user-string">@Model.GetString()</p>
+  <form action="/WordCounter/CreateWord" method="Post">
+    <div class="form-group">
+      <label for="new-word">Enter a word to see how many times it exists in the above selection.</label>
+      <input class="form-control" id="new-word" name="new-word" type="text" />
+      <input type="hidden" name="original-string" value="@Model.GetString()">
+    </div>
+    <button type="submit" class="btn btn-primary">Check</button>
+  </form>
+</div>

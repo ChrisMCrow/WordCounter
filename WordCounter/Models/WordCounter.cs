@@ -21,7 +21,7 @@ namespace WordCounter.Models
 
     public void SetWord(string input)
     {
-      _word = input;
+      _word = input.ToLower();
     }
 
     public string GetWord()
@@ -31,12 +31,14 @@ namespace WordCounter.Models
 
     public string[] StringToArray()
     {
-      return _string.Split(' ');
+      string lowerCase = _string.ToLower();
+      return lowerCase.Split(' ');
     }
 
     public int HowManyMatches()
     {
       string[] words = StringToArray();
+      _word.ToLower();
 
       for(int i = 0; i < words.Length - 1; i ++)
       {

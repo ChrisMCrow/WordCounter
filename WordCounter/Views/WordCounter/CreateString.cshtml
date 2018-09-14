@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1 class="jumbotron">Word Counter</h1>
+  <form action="/WordCounter/CreateWord" method="Post">
+    <div class="form-group">
+      <label for="new-string">Enter a sentence or paragraph.</label>
+      <input class="form-control" id="new-string" name="new-string" type="text" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
