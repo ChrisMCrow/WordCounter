@@ -1,6 +1,6 @@
 # Word Counter
 
-#### A program that counts how many times a given word appears in a given string. 9/7/18
+#### A program that counts how many times a given word appears in a given string. 9/14/18
 
 #### By **Chris Crow**
 
@@ -14,20 +14,21 @@ This program allows the user to input a string of multiple words. He or she may 
 | 1 | The program will accept user input  | "Purple Rain" | "Purple Rain" |
 | 2 | The program can split the initial user input string into individual words. | "Little Red Corvette" | "Little", "Red", "Corvette" |
 | 3 | The program can match all instances of the individual word within a string. | "I just want your extra time and your kiss", "your" | 2 |
-| 4 | The program will accept a new string from the user interface. | "And I was like baby, baby, baby, ooh, like baby, baby, baby, oh." | true |
-| 5 | The program will accept a new word from the user interface to match within the string. | "baby" | true |
 
 
 ## Setup/Installation Requirements
 
-* There is no user interface at this time so nothing to install.
-* The code in WordCounter/Models/WordCounter.cs can be copied for use in other applications.
+* Clone this repository.
+* Run the folder "WordCounter".
 
 ## Known Bugs
 * No known bugs at this time.
 
 ## Technologies Used
 * C#
+* JavaScript
+* jQuery
+* Bootstrap
 * MSTesting
 
 ## Support and Contact Details
