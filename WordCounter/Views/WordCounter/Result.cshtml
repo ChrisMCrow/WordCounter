@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1 class="jumbotron">Word Counter</h1>
+  <p class="result">The word @Model.GetWord()
+    occurs @Model.HowManyMatches() times
+    in the phrase @Model.GetString()</p>
+  <form action="/" method="Get">
+    <button type="submit" class="btn btn-primary">Home</button>
+  </form>
+</div>

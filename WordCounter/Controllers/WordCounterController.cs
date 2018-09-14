@@ -26,7 +26,7 @@ namespace WordCounter.Controllers
             RepeatCounter newInstance = new RepeatCounter();
             newInstance.SetString(Request.Form["original-string"]);
             newInstance.SetWord(Request.Form["new-word"]);
-
+            return View("Result", newInstance);
         }
     }
 }

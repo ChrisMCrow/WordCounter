@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter;
+using WordCounter.Models;
 
 namespace WordCounter.Tests
 {
@@ -26,7 +26,7 @@ namespace WordCounter.Tests
     {
       //Arrange
       string inputString = "Little Red Corvette";
-      string[] inputArray = {"Little", "Red", "Corvette"};
+      string[] inputArray = {"little", "red", "corvette"};
       RepeatCounter newCounter = new RepeatCounter();
 
       //Act
