@@ -3,14 +3,13 @@
 }
 
 <div class="container">
-  <h1 class="header">Word Counter</h1>
-  <p class="user-string">@Model.GetString()</p>
+  <p class="user-string bg-warning">@Model.GetString()</p>
   <form action="/WordCounter/Result" method="Post">
     <div class="form-group">
       <label for="new-word">Enter a word to see how many times it exists in the above selection.</label>
       <input class="form-control" id="new-word" name="new-word" type="text" />
       <input type="hidden" name="original-string" value="@Model.GetString()">
     </div>
-    <button type="submit" class="btn btn-primary">Check</button>
+    <button type="submit" class="btn btn-primary btn-lg">Check</button>
   </form>
 </div>

@@ -3,11 +3,10 @@
 }
 
 <div class="container">
-  <h1 class="jumbotron">Word Counter</h1>
-  <p class="result">The word @Model.GetWord()
-    occurs @Model.HowManyMatches() times
-    in the phrase @Model.GetString()</p>
+  <p class="result">The word <span class="highlight">@Model.GetWord()</span>
+    occurs <span class="highlight">@Model.HowManyMatches()</span> times
+    in the phrase <span class="highlight">@Model.GetString()</span></p>
   <form action="/" method="Get">
-    <button type="submit" class="btn btn-primary">Home</button>
+    <button type="submit" class="btn btn-primary btn-lg">Home</button>
   </form>
 </div>
