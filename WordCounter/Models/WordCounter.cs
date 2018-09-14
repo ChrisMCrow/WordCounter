@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 
 namespace WordCounter.Models
 {
@@ -32,7 +34,8 @@ namespace WordCounter.Models
     public string[] StringToArray()
     {
       string lowerCase = _string.ToLower();
-      return lowerCase.Split(' ');
+      string [] stringArray = Regex.Split(lowerCase, @"\W|\s");
+      return stringArray;
     }
 
     public int HowManyMatches()

@@ -29,3 +29,7 @@ body {
   font-style: italic;
   font-size: 32px;
 }
+
+.bg-warning {
+  padding: 20px;
+}

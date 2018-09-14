@@ -3,7 +3,7 @@
 }
 
 <div class="container">
-  <p class="user-string bg-warning">@Model.GetString()</p>
+  <p class="lead bg-warning"><var>@Model.GetString()</var></p>
   <form action="/WordCounter/Result" method="Post">
     <div class="form-group">
       <label for="new-word">Enter a word to see how many times it exists in the above selection.</label>
