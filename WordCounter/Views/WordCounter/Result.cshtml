@@ -3,10 +3,17 @@
 }
 
 <div class="container">
-  <p class="result">The word <var>@Model.GetWord()</var>
+  <div class="bg-primary">
+    <p>The word <var>@Model.GetWord()</var>
     occurs <var>@Model.HowManyMatches()</var> times
-    in the phrase <var>@Model.GetString()</var></p>
-  <form action="/" method="Get">
+    in the phrase:</p>
+    <p><var>@Model.GetString()</var></p>
+  </div>
+  <form class="pull-left" action="/" method="Get">
     <button type="submit" class="btn btn-primary btn-lg">Home</button>
+  </form>
+  <form action="/WordCounter/CreateWord" method="Post">
+    <input type="hidden" name="new-string" value="@Model.GetString()">
+    <button type="submit" class="btn btn-warning btn-lg">Choose Word</button>
   </form>
 </div>
